@@ -69,6 +69,9 @@ The first 5 fields of the line represent the time(s) when the command should be 
 1. check to see if cron is running with `ps -ef | grep cron | grep -v grep`
 2. If not, restart it with `/sbin/service cron start` or `/sbin/service crond start`
 
+#### Check Logs
+1. Check the crontab logs with `grep CRON /var/log/syslog`
+
 #### Formatting
 1. Make sure the last line is terminated by going to it and pressing enter to start a new line.
 
